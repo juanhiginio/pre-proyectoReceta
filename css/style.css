@@ -15,7 +15,7 @@ body {
     padding: 0px 25px;
     margin-top: 8px;
     display: grid;
-    grid-template-rows: 60px 1fr 100px;
+    grid-template-rows: 60px 1fr 55px;
     grid-template-areas: 
                         "header"
                         "main"
@@ -220,6 +220,11 @@ margin: 40px 20px;
     margin-bottom: 20px;
 }
 
+.receta-ultima {
+    display: flex;
+    padding: 5px 8px;
+}
+
 .titulo-mas-recetas {
     font-size: 20px;
     color: #7E4333;
@@ -276,6 +281,16 @@ table tr td:nth-of-type(2) {
     text-align: right;
 }
 
-footer {
+.contenido-footer {
+    width: 100%;
+    height: 55px;
     grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #255538;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-bottom: 0px;
 }
