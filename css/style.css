@@ -58,13 +58,15 @@ body {
 }
 
 .img-modoOscuro {
-    width: 43px;
-    height: 43px;
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 }
 
 .img-modoOscuro:hover {
-    padding: 3px;
+    padding: 1px;
 }
 
 .btn-activar-modo-oscuro {
@@ -141,7 +143,7 @@ main {
 }
 
 .contedor-info{
-margin: 40px 20px;
+    margin: 40px 20px;
 }
 
 .img-ensalada {
@@ -305,4 +307,86 @@ table tr td:nth-of-type(2) {
 .img-copyright {
     width: 230px;
     height: 30px;
+}
+
+/* Media Queries Tablet */
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        
+    }
+
+    .img-ensalada {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor-info-principal {
+        max-width: 100%;
+    }
+
+    .contenedor-aside {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contenedor-nutricional {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor-otros {
+        width: 100%;
+        height: auto;
+    }
+
+    .encabezado {
+        margin: 0 -10px;
+    }
+
+    .contenido-footer {
+        margin: 0px -10px;
+    }
+
+    .contenido-info-tiempo-preparacion {
+        margin-left: -50px;
+        padding: 25px;
+    }
+
+    .contenedor-info-principal ul {
+        margin-left: -30px
+    }
+}
+
+/* Media Queries Celular */
+@media (max-width: 480px) {
+    main {
+        padding: 15px 0px;
+    }
+
+    .encabezado {
+        margin: 0px -5px;
+    }
+
+    .contenido-footer {
+        margin: 0px -5px;
+    }
+
+    .contenido-info-tiempo-preparacion {
+        margin-left: -50px;
+        padding: 25px 30px;
+    }
+
+    .parrafo-contenido-principal {
+        padding: 0 5px;
+    }
+
+    .contenedor-info-principal ul {
+        margin-left: -40px;
+    }
 }
